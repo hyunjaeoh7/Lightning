@@ -6,9 +6,7 @@ int greenValue = 30;
 //initializes the dictionary used to organize all the lavas
 IntDict allLavas;
 
-
-void setup()
-{
+void setup() {
   allLavas = new IntDict();
   //rightmost lower lava
   allLavas.set("lava1StartX", 201);
@@ -41,8 +39,8 @@ void setup()
   fill(255, 150, 0);
   noLoop();
 }
-void draw()
-{
+
+void draw() {
   noStroke();
   //lava
   fill(250,30,0);
@@ -110,7 +108,6 @@ void draw()
     allLavas.set("lava" + i + "StartY", allLavas.get("lava" + i + "EndY"));
   }
 }
-void mousePressed()
-{
+void mousePressed() {
   redraw();
 }
